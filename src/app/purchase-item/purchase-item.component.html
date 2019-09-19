@@ -1,0 +1,28 @@
+<p>purchase-item works! : {{counts}}</p>
+
+<div id="q">
+
+    <p  *ngFor="let dep of departments">
+        <button (click)=onSelect([dep.id])>purchase item</button>
+    </p>
+
+</div>
+
+<div id="qw">
+
+    <p id="p" *ngFor="let dep of departments">
+        {{dep.name}}
+    </p>
+        
+</div>
+
+<div id="qws">
+
+        <p id="p" *ngFor="let dep of departments">
+            {{dep.id}}
+        </p>
+            
+    </div>
+
+    
+
