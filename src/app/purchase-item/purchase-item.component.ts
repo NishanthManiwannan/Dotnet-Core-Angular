@@ -6,27 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./purchase-item.component.css']
 })
 export class PurchaseItemComponent implements OnInit {
-
-  departments = [
-    {"id":1, "name":"Angular"},
-    {"id":2, "name":"Node"},
-    {"id":3, "name":"MongoDB"},
-    {"id":4, "name":"Ruby"},
-    {"id":5, "name":"Bootstrap"}
-  ]
-
-  public counts = this.departments.length;
-
+  
+  public topics = ['1', '2', '3'];
+  public topicss = ['Table', 'Chair', 'Tv'];
 
   constructor() { }
 
   ngOnInit() {
-  }
-
-  onSelect(counts){
-    if(this.departments.length == 1){
-      this.counts = 1;
-    }
   }
 
 }

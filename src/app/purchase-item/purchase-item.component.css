@@ -17,3 +17,11 @@
     margin-left: 250px; 
     margin-top: -185px;
 }
+
+label,h3,button,p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input,select{
+    width: 580px;
+}

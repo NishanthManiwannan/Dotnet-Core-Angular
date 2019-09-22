@@ -1,28 +1,68 @@
-<p>purchase-item works! : {{counts}} times</p>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<div id="q">
+<!-- <h3>TOTAL PURCHESED ITEMS : {{counts}}</h3>
 
-    <p  *ngFor="let dep of departments">
-        <button (click)=onSelect([dep.id])>purchase item</button>
-    </p>
+<div>
+<hr>
+    <div id="q">
+        <p  *ngFor="let dep of departments">
+            <button (click)=onSelect([dep.id])>purchase item</button>
+        </p>
+    </div>
 
-</div>
+    <div id="qw">
+        <p id="p" *ngFor="let dep of departments">
+            {{dep.name}}
+        </p>        
+    </div>
 
-<div id="qw">
-
-    <p id="p" *ngFor="let dep of departments">
-        {{dep.name}}
-    </p>
-        
-</div>
-
-<div id="qws">
-
+    <div id="qws">
         <p id="p" *ngFor="let dep of departments">
             {{dep.id}}
-        </p>
-            
+        </p>            
     </div>
+    
+</div> -->
+
+<div class="container-fluid mb-5">
+    <hr>
+    <h3>ADD NEW ITEMS</h3>
+
+    <form>
+        
+      <div class="form-group">
+        <label for="" class="">PURCHESED ID </label>
+        <input id="width" class="form-control" type="number">
+      </div>
+      
+      <label for="" class="">SELECT CUSTOMER ID </label>
+      <div class="form-group">
+        <select class="custom-select">
+            <option value="">Select Customer Id Here!</option>
+            <option *ngFor="let topic of topics">{{topic}}</option>
+        </select>
+      </div>
+
+      <label for="" class="">SELECT ITEM ID </label>
+      <div class="form-group">
+        <select class="custom-select">
+            <option value="">Select Product Id Here!</option>
+            <option *ngFor="let topic of topicss">{{topic}}</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="" class="">QUANTITY </label>
+        <input id="width" class="form-control" type="number">
+      </div>
+
+      <div>
+        <button class="btn btn-success">BUY PRODUCT</button>
+      </div>
+           
+    </form>
+        
+</div>
 
     
 
